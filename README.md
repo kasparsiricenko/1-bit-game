@@ -27,7 +27,7 @@ Go to folder using command
 
 Clone the project to your computer
 
-`git clone name of the project`
+`git clone https://github.com/kasparsiricenko/1-bit-game.git`
 
 Install Yarn package manager
 
