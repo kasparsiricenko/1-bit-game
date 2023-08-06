@@ -1,4 +1,4 @@
-# Name of the game in progress
+# The name of the game in progress
 
 ## Screenshots
 
@@ -7,27 +7,31 @@
 
 ## Start development build
 
-To start game locally you need:
+To start the game locally, you need the following:
 
 Register on https://github.com/
 
-Install LTS version of Node.js program on https://nodejs.org
+Install LTS version of the Node.js program on https://nodejs.org
 
 Install Git program https://git-scm.com/
 
-Run Git Bash program
+Run the Git Bash program.
 
-Create folder using command
+Create a folder using the command
 
 `mkdir repos`
 
-Go to folder using command
+Go to a folder using the command
 
 `cd repos`
 
 Clone the project to your computer
 
 `git clone https://github.com/kasparsiricenko/1-bit-game.git`
+
+Go to the project
+
+`cd 1-bit-game`
 
 Install Yarn package manager
 
