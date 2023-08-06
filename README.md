@@ -2,6 +2,9 @@
 
 ## Screenshots
 
+![image](https://github.com/kasparsiricenko/1-bit-game/assets/64709398/3ab6d388-20c3-409c-8083-0fd38db0a474)
+
+
 ## Start development build
 
 To start game locally you need:
