@@ -10,7 +10,7 @@ const init = async () => {
   context.imageSmoothingEnabled = false
 
   window.debug = false
-  window.currentLevel = 1
+  window.currentLevel = 2
 
   initilizeControls()
 }

@@ -2,7 +2,8 @@
   // src/assets.js
   window.props = {};
   window.actors = {
-    gnome: {}
+    gnome: {},
+    player: {}
   };
   var actorsAssets = [
     {
@@ -2384,7 +2385,7 @@
     window.context = canvas.getContext("2d");
     context.imageSmoothingEnabled = false;
     window.debug = false;
-    window.currentLevel = 1;
+    window.currentLevel = 2;
     initilizeControls_default();
   };
   var init_default = init;
@@ -2394,27 +2395,19 @@
   function handleControls_default() {
     if (controls.right) {
       window.debug && console.log("Right key is being pressed");
-      window.actors.gnome.controls.x = validateControl(
-        window.actors.gnome.controls.x + 2
-      );
+      window.player.controls.x = validateControl(window.player.controls.x + 2);
     }
     if (controls.left) {
       window.debug && console.log("Left key is being pressed");
-      window.actors.gnome.controls.x = validateControl(
-        window.actors.gnome.controls.x - 2
-      );
-    }
-    if (controls.up) {
-      window.debug && console.log("Up key is being pressed");
-      window.actors.gnome.controls.y = validateControl(
-        window.actors.gnome.controls.y - 2
-      );
+      window.player.controls.x = validateControl(window.player.controls.x - 2);
     }
     if (controls.down) {
       window.debug && console.log("Down key is being pressed");
-      window.actors.gnome.controls.y = validateControl(
-        window.actors.gnome.controls.y + 2
-      );
+      window.player.controls.y = validateControl(window.player.controls.y + 2);
+    }
+    if (controls.up) {
+      window.debug && console.log("Up key is being pressed");
+      window.player.controls.y = validateControl(window.player.controls.y - 2);
     }
     if (controls.f) {
       window.debug && console.log("F key is being pressed");
@@ -2423,6 +2416,10 @@
         window.invert = !window.invert;
       }
     }
+  }
+
+  // src/handlers/handlePlayer.js
+  function handlePlayer_default() {
   }
 
   // src/constants.js
@@ -2477,11 +2474,11 @@
   // src/levels/1.js
   var initilize = () => {
     console.log("Level 1 started");
-    window.actors.gnome.controls = { x: 0, y: 0 };
+    window.player = { controls: { x: 0, y: 0 } };
   };
   var loop = () => {
     context.clearRect(0, 0, canvas.width, canvas.height);
-    drawAnimation_default(actors.gnome.peaceToRight, actors.gnome.controls);
+    drawAnimation_default(actors.gnome.peaceToRight, player.controls);
     drawAnimation_default(props.cloth, { x: 50, y: 20 }, { frameDelay: 1320 });
     drawAnimation_default(props.torchRight, { x: 100, y: 10 }, { frameDelay: 840 });
     drawAnimation_default(props.bird, { x: 100, y: 80 }, { frameDelay: 240 });
@@ -2495,6 +2492,7 @@
     drawAnimation_default(props.chandelierOn, { x: 30, y: 30 }, { frameDelay: 500 });
     drawAnimation_default(props.chandelierWindy, { x: 29, y: 40 }, { frameDelay: 500 });
     handleControls_default();
+    handlePlayer_default();
     setTimeout(loop, 33);
   };
   var __default = { initilize, loop };
@@ -2502,10 +2500,13 @@
   // src/levels/2.js
   var initilize2 = () => {
     console.log("Level 2 started");
-    window.actors.gnome.controls = { x: 0, y: 0 };
+    window.player = { controls: { x: 0, y: 0 } };
   };
   var loop2 = () => {
     context.clearRect(0, 0, canvas.width, canvas.height);
+    drawAnimation_default(actors.gnome.peaceToRight, player.controls);
+    handleControls_default();
+    setTimeout(loop2, 33);
   };
   var __default2 = { initilize: initilize2, loop: loop2 };
 

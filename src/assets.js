@@ -5,6 +5,7 @@ window.props = {}
  */
 window.actors = {
   gnome: {},
+  player: {},
 }
 
 /**
