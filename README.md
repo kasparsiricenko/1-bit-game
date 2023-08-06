@@ -19,7 +19,7 @@ Run Git Bash program
 
 Create folder using command
 
-`cd ~ && mkdir repos`
+`mkdir repos`
 
 Go to folder using command
 
