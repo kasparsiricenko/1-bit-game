@@ -10,7 +10,9 @@ const initilize = () => {
 const loop = () => {
   context.clearRect(0, 0, canvas.width, canvas.height)
   drawAnimation(actors.gnome.peaceToRight, player.controls)
-  handleControls()
+  drawImage(props.lvl1, { x: 10, y: 10})
+  drawAnimation(props.table, { x: 30, y: 40}, { frameDelay: 500})
+handleControls()
   setTimeout(loop, 33)
 }
 

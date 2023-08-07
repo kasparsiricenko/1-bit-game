@@ -26,6 +26,13 @@
       name: "gnome"
     },
     {
+      name: "lvl1"
+    },
+    {
+      name: "table",
+      animationWidth: 8
+    },
+    {
       name: "cloth",
       animationWidth: 10
     },
@@ -2505,6 +2512,8 @@
   var loop2 = () => {
     context.clearRect(0, 0, canvas.width, canvas.height);
     drawAnimation_default(actors.gnome.peaceToRight, player.controls);
+    drawImage_default(props.lvl1, { x: 10, y: 10 });
+    drawAnimation_default(props.table, { x: 30, y: 40 }, { frameDelay: 500 });
     handleControls_default();
     setTimeout(loop2, 33);
   };

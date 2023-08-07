@@ -36,6 +36,13 @@ export const propsAssets = [
     name: "gnome",
   },
   {
+    name: "lvl1",
+  },
+  {
+    name:"table",
+    animationWidth: 8,
+  },
+  {
     name: "cloth",
     animationWidth: 10,
   },
