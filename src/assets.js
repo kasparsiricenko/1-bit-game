@@ -39,6 +39,9 @@ export const propsAssets = [
     name: "lvl1",
   },
   {
+    name: "locanion11",
+  },
+  {
     name:"table",
     animationWidth: 8,
   },
