@@ -29,6 +29,9 @@
       name: "lvl1"
     },
     {
+      name: "location11"
+    },
+    {
       name: "table",
       animationWidth: 8
     },
@@ -2512,8 +2515,8 @@
   var loop2 = () => {
     context.clearRect(0, 0, canvas.width, canvas.height);
     drawAnimation_default(actors.gnome.peaceToRight, player.controls);
-    drawImage_default(props.lvl1, { x: 10, y: 10 });
-    drawAnimation_default(props.table, { x: 30, y: 40 }, { frameDelay: 500 });
+    drawImage_default(props.location11, { x: 16, y: 16 });
+    drawAnimation_default(props.torchRight, { x: 81, y: 29 }, { frameDelay: 500 });
     handleControls_default();
     setTimeout(loop2, 33);
   };

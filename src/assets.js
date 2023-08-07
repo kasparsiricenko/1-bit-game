@@ -39,7 +39,7 @@ export const propsAssets = [
     name: "lvl1",
   },
   {
-    name: "locanion11",
+    name: "location11",
   },
   {
     name:"table",
