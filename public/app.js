@@ -36,6 +36,28 @@
       animationWidth: 8
     },
     {
+      name: "backgroundA1"
+    },
+    {
+      name: "locationA1"
+    },
+    {
+      name: "doorA1",
+      animationWidth: 3
+    },
+    {
+      name: "vine",
+      animationWidth: 10
+    },
+    {
+      name: "vine1",
+      animationWidth: 10
+    },
+    {
+      name: "helmetL",
+      animationWidth: 5
+    },
+    {
       name: "cloth",
       animationWidth: 10
     },
@@ -2517,6 +2539,11 @@
     drawAnimation_default(actors.gnome.peaceToRight, player.controls);
     drawImage_default(props.location11, { x: 16, y: 16 });
     drawAnimation_default(props.torchRight, { x: 81, y: 29 }, { frameDelay: 500 });
+    drawImage_default(props.locationA1, { x: 16, y: 87 });
+    drawAnimation_default(props.doorA1, { x: 18, y: 111 }, { frameDelay: 1e3 });
+    drawAnimation_default(props.vine, { x: 30, y: 94 }, { frameDelay: 500 });
+    drawAnimation_default(props.vine1, { x: 62, y: 94 }, { frameDelay: 650 });
+    drawAnimation_default(props.helmetL, { x: 59, y: 120 }, { frameDelay: 700 });
     handleControls_default();
     setTimeout(loop2, 33);
   };

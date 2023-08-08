@@ -17,7 +17,6 @@ const loop = () => {
   drawAnimation(props.vine, { x: 30, y: 94}, {frameDelay: 500})
   drawAnimation(props.vine1, { x: 62, y: 94}, {frameDelay: 650})
   drawAnimation(props.helmetL, { x: 59, y: 120}, {frameDelay: 700})
-  drawImage(props.backgroundA1, { x: 16, y: 87})
 handleControls()
   setTimeout(loop, 33)
 }
