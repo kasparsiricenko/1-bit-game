@@ -46,6 +46,28 @@ export const propsAssets = [
     animationWidth: 8,
   },
   {
+    name: "backgroungA1",
+  },
+  {
+    name: "locationA1",
+  },
+  {
+    name: "doorA1",
+    animationWidth: 3,
+  },
+  {
+    name: "vine",
+    animationWidth: 10,
+  },
+  {
+    name: "vine1",
+    animationWidth: 10,
+  },
+  {
+    name: "helmetL",
+    animationWidth: 5,
+  },
+  {
     name: "cloth",
     animationWidth: 10,
   },

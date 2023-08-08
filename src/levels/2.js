@@ -12,6 +12,12 @@ const loop = () => {
   drawAnimation(actors.gnome.peaceToRight, player.controls)  
   drawImage(props.location11, { x: 16, y: 16})
   drawAnimation(props.torchRight, { x: 81, y: 29}, {frameDelay: 500})
+  drawImage(props.locationA1, { x: 16, y: 87})
+  drawAnimation(props.doorA1, { x: 18, y: 111}, {frameDelay: 1000})
+  drawAnimation(props.vine, { x: 30, y: 94}, {frameDelay: 500})
+  drawAnimation(props.vine1, { x: 62, y: 94}, {frameDelay: 650})
+  drawAnimation(props.helmetL, { x: 59, y: 120}, {frameDelay: 700})
+  drawImage(props.backgroundA1, { x: 16, y: 87})
 handleControls()
   setTimeout(loop, 33)
 }
