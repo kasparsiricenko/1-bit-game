@@ -36,6 +36,10 @@
       animationWidth: 8
     },
     {
+      name: "gnomeJump",
+      animationWidth: 16
+    },
+    {
       name: "backgroundA1"
     },
     {
@@ -2538,6 +2542,7 @@
     context.clearRect(0, 0, canvas.width, canvas.height);
     drawAnimation_default(actors.gnome.peaceToRight, player.controls);
     drawImage_default(props.location11, { x: 16, y: 16 });
+    drawAnimation_default(props.gnomeJump, { x: 27, y: 24 }, { frameDelay: 50 });
     drawAnimation_default(props.torchRight, { x: 81, y: 29 }, { frameDelay: 500 });
     drawImage_default(props.locationA1, { x: 16, y: 87 });
     drawAnimation_default(props.doorA1, { x: 18, y: 111 }, { frameDelay: 1e3 });

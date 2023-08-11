@@ -46,6 +46,10 @@ export const propsAssets = [
     animationWidth: 8,
   },
   {
+    name: "gnomeJump",
+    animationWidth: 16,
+  },
+  {
     name: "backgroundA1",
   },
   {

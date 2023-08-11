@@ -11,6 +11,7 @@ const loop = () => {
   context.clearRect(0, 0, canvas.width, canvas.height)
   drawAnimation(actors.gnome.peaceToRight, player.controls)  
   drawImage(props.location11, { x: 16, y: 16})
+  drawAnimation(props.gnomeJump, { x: 27, y: 24}, {frameDelay: 50})
   drawAnimation(props.torchRight, { x: 81, y: 29}, {frameDelay: 500})
   drawImage(props.locationA1, { x: 16, y: 87})
   drawAnimation(props.doorA1, { x: 18, y: 111}, {frameDelay: 1000})
